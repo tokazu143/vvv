@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>hi baby</title>
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+		<style>
+			body {
+				background-color: pink;
+				font-family: 'Poppins';
+				
+			}
+			h1 {
+				color: red;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			button {
+				display: block;
+				position: absolute;
+				padding: 40px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				margin-right: 20px;
+				margin-left: 20px;
+				background-color: black;
+				color: white;
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+				
+			}
+			
+			.button1 {
+				right: 50%;
+				background-color: rgb(80, 253, 80);
+			}
+
+			.button1:hover {
+				background-color: rgb(119, 241, 119);
+			}
+
+			.button2 {
+				right: 40%;
+				background-color: red;
+			}
+
+			.button2:hover {
+				background-color: rgb(255, 109, 109);
+			}
+
+			@media (max-width: 992px) {
+				button {
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+		<center>
+		<br>
+		<br>
+		<br>
+		<br>	
+		<img src = "images/cute.gif">
+		<br>
+		<br>
+		<h1>can i be your valentine?</h1>
+		<br>
+		<a href = "index1.html" target="_blank"><button class="button1"><h2>yes</h2></button></a>
+		<button class="button2" title="please think about it"><h2>no</h2></button>
+		</center>
+		</div>
+ 	</body>
+</html>
+
+<script>
+	var b = document.querySelector(".button2");
+	b.addEventListener("click",change);
+	function change()
+	{
+    	var i = Math.floor(Math.random()*500)+1;
+    	var j = Math.floor(Math.random()*500)+1;
+    	b.style.left = i+"px";
+    	b.style.top = j+"px";
+	}
+</script>
